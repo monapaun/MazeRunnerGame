@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar dialog;
+
+<direction> = gravity [north | east | west | south | empty];
+			  
+<direction_command> = <direction>+;
+					
+public <command> = <direction_command>;

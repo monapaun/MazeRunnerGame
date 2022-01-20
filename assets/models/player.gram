@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar player;
+
+<action> = player [jump | turn | grow | small | anvil];
+			  
+<action_command> = <action>+;
+					
+public <command> = <action_command>;
